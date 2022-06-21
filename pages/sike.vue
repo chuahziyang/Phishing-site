@@ -18,7 +18,7 @@
           This is a phishing link. It's not meant to be clicked.
         </p>
         <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-          You are the {{ count }}th person to click on this link
+          You are the {{ count }}{{ nth(count) }} person to click on this link
         </p>
       </div>
     </div>
@@ -27,6 +27,10 @@
 
 <script setup>
 let count = ref(0);
+
+function nth(n) {
+  return ["st", "nd", "rd"][((((n + 90) % 100) - 10) % 10) - 1] || "th";
+}
 
 onMounted(async () => {
   console.log("created");
