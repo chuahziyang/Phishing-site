@@ -20,6 +20,13 @@
         <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
           You are the {{ count }}{{ nth(count) }} person to click on this link
         </p>
+        <p class="mt-16 text-xl text-block text-gray-500">
+          Do await our Battalion Digital Defense Activity, which us coming on
+          27th June, A real Dissemination message will come out then! The
+          activity will cover various cyber safety guidelines, including, how to
+          avoid phishing scams, how to select a good password ect. <br />
+          See you there!
+        </p>
       </div>
     </div>
   </div>
